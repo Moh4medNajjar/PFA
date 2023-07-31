@@ -1,0 +1,4 @@
+http://aziz0220.pythonanywhere.com/
+
+- open this link to test the web app, use x-ray images in the folder "Testing images"
+- Test all the models available to see the difference!

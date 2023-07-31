@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pneumonia Prediction</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--<h1>Pneumonia Prediction</h1>
+    {% if prediction1 %}
+      <p>The prediction is: {{ prediction1 }} with the percentage of {{ percent }}</p>
+    {% endif %}
+    {% if error1 %}
+    <p> {{ error1 }}</p>
+  {% endif %}
+    {% if error2 %}
+    <p>File not found or invalid file path. The files should be in this directory: {{ error2 }}</p>
+    <p>you can modify the directory from "app.py"::"wanteddirectory"
+    </p>
+  {% endif %} -->
+  
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Predict">
+    </form>
+
+
+    <div id="wrapper">
+      <div id="fileDropBox">Drop files here.</div>
+      <script src="utilities.js" type="text/javascript"></script>
+      <!-- Provides the alert() method. -->
+    </div>
+  </body>
+</html>
